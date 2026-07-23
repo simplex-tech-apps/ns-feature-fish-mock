@@ -1,5 +1,5 @@
 {
-  "originHash" : "7f2f94e2c305b5e5919ecb42b6e43517a51dea5fb452a16ddd594d8881dbcb62",
+  "originHash" : "3089ba89de628a8139b3c69011e5f252dbd62269a30c349eab056d5f13f7ab58",
   "pins" : [
     {
       "identity" : "kingfisher",
@@ -15,8 +15,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/simplex-tech-apps/ns-core-design-system.git",
       "state" : {
-        "revision" : "931f01e1f191e06927a2d219b2e185186c921928",
-        "version" : "2.0.4"
+        "revision" : "856ca433632d98436c973754042921fe455dd4dd",
+        "version" : "2.0.5"
       }
     }
   ],
