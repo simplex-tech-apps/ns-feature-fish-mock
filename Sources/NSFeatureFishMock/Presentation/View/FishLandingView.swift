@@ -14,7 +14,7 @@ struct FishLandingView: View {
     var fishViewModel: FishViewModel
     
     var body: some View {
-        List {
+        VStack {
             ReusableHeaderView(style: .standard(title: "Shop by category", subtitle: nil))
             NAVerticalGrid_NxN_V2()
             ReusableHeaderView(style: .standard(title: "From Marine/Sea", subtitle: nil))
@@ -63,8 +63,6 @@ struct FishLandingView: View {
                 
             }
         }
-        .listStyle(.plain)
-        .listRowSpacing(0)
     }
 }
 
