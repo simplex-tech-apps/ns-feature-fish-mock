@@ -14,7 +14,7 @@ let package = Package(
     dependencies: [
         .package(
             url: "https://github.com/simplex-tech-apps/ns-core-design-system.git",
-            from: "2.0.5"
+            from: "3.0.0"
         )
     ],
     targets: [
