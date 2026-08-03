@@ -15,50 +15,104 @@ struct FishLandingView: View {
     
     var body: some View {
         VStack {
-            ReusableHeaderView(style: .standard(title: "Shop by category", subtitle: nil))
-            NAVerticalGrid_NxN_V2()
-            ReusableHeaderView(style: .standard(title: "From Marine/Sea", subtitle: nil))
-            NAHorizontalGrid_NxN_V3(rowCount: 2, columnCount: 2, scrollDirection: .horizontal)
+            ReusableHeaderView(
+                style: .standard(title: "Shop by category", subtitle: nil)
+            )
+            NAGridViewV6(
+                rowCount: 0,
+                columnCount: 3,
+                scrollDirection: .vertical
+            )
+            ReusableHeaderView(
+                style: .standard(title: "From Marine/Sea", subtitle: nil)
+            )
+            NAGridViewV4(
+                rowCount: 2,
+                columnCount: 0,
+                scrollDirection: .horizontal
+            )
             SeeAllButtonViewV2() {
                 
             }
-            ReusableHeaderView(style: .standard(title: "From Freshwater/Lake", subtitle: nil))
-            NAHorizontalGrid_NxN_V3(rowCount: 2, columnCount: 2, scrollDirection: .horizontal)
+            ReusableHeaderView(
+                style: .standard(title: "From Freshwater/Lake", subtitle: nil)
+            )
+            NAGridViewV4(
+                rowCount: 2,
+                columnCount: 0,
+                scrollDirection: .horizontal
+            )
             SeeAllButtonViewV2() {
                 
             }
             ReusableHeaderView(style: .standard(title: "Crab", subtitle: nil))
-            NAHorizontalGrid_NxN_V3(rowCount: 2, columnCount: 2, scrollDirection: .horizontal)
+            NAGridViewV4(
+                rowCount: 2,
+                columnCount: 0,
+                scrollDirection: .horizontal
+            )
             SeeAllButtonViewV2() {
                 
             }
-            ReusableHeaderView(style: .standard(title: "Prawns/Shell Fish", subtitle: nil))
-            NAHorizontalGrid_NxN_V3(rowCount: 2, columnCount: 2, scrollDirection: .horizontal)
+            ReusableHeaderView(
+                style: .standard(title: "Prawns/Shell Fish", subtitle: nil)
+            )
+            NAGridViewV4(
+                rowCount: 2,
+                columnCount: 0,
+                scrollDirection: .horizontal
+            )
             SeeAllButtonViewV2() {
                 
             }
             ReusableHeaderView(style: .standard(title: "Exotic", subtitle: nil))
-            NAHorizontalGrid_NxN_V3(rowCount: 2, columnCount: 2, scrollDirection: .horizontal)
+            NAGridViewV4(
+                rowCount: 2,
+                columnCount: 0,
+                scrollDirection: .horizontal
+            )
             SeeAllButtonViewV2() {
                 
             }
-            ReusableHeaderView(style: .standard(title: "Boneless", subtitle: nil))
-            NAHorizontalGrid_NxN_V3(rowCount: 2, columnCount: 2, scrollDirection: .horizontal)
+            ReusableHeaderView(
+                style: .standard(title: "Boneless", subtitle: nil)
+            )
+            NAGridViewV4(
+                rowCount: 2,
+                columnCount: 0,
+                scrollDirection: .horizontal
+            )
             SeeAllButtonViewV2() {
                 
             }
             ReusableHeaderView(style: .standard(title: "Steaks", subtitle: nil))
-            NAHorizontalGrid_NxN_V3(rowCount: 2, columnCount: 2, scrollDirection: .horizontal)
+            NAGridViewV4(
+                rowCount: 2,
+                columnCount: 0,
+                scrollDirection: .horizontal
+            )
             SeeAllButtonViewV2() {
                 
             }
-            ReusableHeaderView(style: .standard(title: "Dry Fish", subtitle: nil))
-            NAHorizontalGrid_NxN_V3(rowCount: 2, columnCount: 2, scrollDirection: .horizontal)
+            ReusableHeaderView(
+                style: .standard(title: "Dry Fish", subtitle: nil)
+            )
+            NAGridViewV4(
+                rowCount: 2,
+                columnCount: 0,
+                scrollDirection: .horizontal
+            )
             SeeAllButtonViewV2() {
                 
             }
-            ReusableHeaderView(style: .standard(title: "Freshly Frozen", subtitle: nil))
-            NAHorizontalGrid_NxN_V3(rowCount: 2, columnCount: 2, scrollDirection: .horizontal)
+            ReusableHeaderView(
+                style: .standard(title: "Freshly Frozen", subtitle: nil)
+            )
+            NAGridViewV4(
+                rowCount: 2,
+                columnCount: 0,
+                scrollDirection: .horizontal
+            )
             SeeAllButtonViewV2() {
                 
             }
@@ -68,5 +122,8 @@ struct FishLandingView: View {
 
 // MARK: - Preview Setup Engine
 #Preview {
-    FishLandingView(fishViewModel: FishViewModel())
+    ScrollView {
+        FishLandingView(fishViewModel: FishViewModel())
+    }
 }
+
